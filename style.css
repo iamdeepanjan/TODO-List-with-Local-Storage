@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
- 
+
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #f0f4f8;
@@ -12,7 +12,7 @@ body {
     align-items: center;
     height: 100vh;
 }
- 
+
 .container {
     background-color: #ffffff;
     padding: 20px 30px;
@@ -21,7 +21,7 @@ body {
     width: 400px;
     text-align: center;
 }
- 
+
 h1 {
     font-size: 2rem;
     color: #333;
@@ -29,13 +29,13 @@ h1 {
     font-weight: bold;
     letter-spacing: 1.5px;
 }
- 
+
 .input-container {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
 }
- 
+
 input[type="text"] {
     flex: 1;
     padding: 10px;
@@ -45,12 +45,12 @@ input[type="text"] {
     outline: none;
     transition: all 0.3s ease;
 }
- 
+
 input[type="text"]:focus {
     border-color: #4caf50;
     box-shadow: 0px 0px 5px rgba(76, 175, 80, 0.3);
 }
- 
+
 button {
     background-color: #4caf50;
     color: white;
@@ -62,15 +62,15 @@ button {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
- 
+
 button:hover {
     background-color: #45a049;
 }
- 
+
 ul {
     list-style-type: none;
 }
- 
+
 ul li {
     background-color: #f9f9f9;
     padding: 10px;
@@ -81,8 +81,9 @@ ul li {
     align-items: center;
     border-left: 4px solid #4caf50;
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
 }
- 
+
 ul li button {
     background-color: #f44336;
     padding: 5px 10px;
@@ -93,7 +94,19 @@ ul li button {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
- 
+
 ul li button:hover {
     background-color: #d32f2f;
+}
+
+.completed {
+    color: #999;
+    background-color: #e0e0e0;
+    border-left-color: #8bc34a;
+    /* Faded green to indicate completion */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.completed span {
+    text-decoration: line-through;
 }
